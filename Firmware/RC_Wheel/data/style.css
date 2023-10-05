@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+header {
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.horizontal-buttons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.control-button,
+.stop-button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #04AA6D;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* D-pad styles */
+.control-button.up::before {
+    content: '\2191'; /* Up arrow character */
+}
+
+.control-button.left::before {
+    content: '\2190'; /* Left arrow character */
+}
+
+.control-button.right::before {
+    content: '\2192'; /* Right arrow character */
+}
+
+.control-button.down::before {
+    content: '\2193'; /* Down arrow character */
+}
+
+.stop-button {
+    width: auto; /* Adjust the width for a rectangular design */
+    background-color: #FF6347; /* Tomato red */
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px; /* Move the button to the top left corner */
+    order: -1; /* Move it to the top in the flex container */
+    position: absolute; /* Position it absolutely */
+    top: 70px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+}
+
+.control-button:hover,
+.stop-button:hover {
+    background-color: #057955;
+}
+
+/* Center the text in the buttons */
+.button-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Remove the button's default outline on focus */
+.control-button:focus,
+.stop-button:focus {
+    outline: none;
+}

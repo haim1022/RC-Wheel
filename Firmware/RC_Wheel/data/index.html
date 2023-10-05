@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Robot Remote Control</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="manifest" type="application/json" href="/manifest.json">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Robot Remote Control</h1>
+        </header>
+        <button class="stop-button" id="stopButton" onclick="controlRobot('STOP');">STOP</button>
+        <div class="button-container">
+            <button class="control-button up" id="forwardButton" onclick="controlRobot('FORWARD');"></button>
+            <div class="horizontal-buttons">
+                <button class="control-button left" id="leftButton" onclick="controlRobot('LEFT');"></button>
+                <button class="control-button right" id="rightButton" onclick="controlRobot('RIGHT');"></button>
+            </div>
+            <button class="control-button down" id="backwardButton" onclick="controlRobot('BACKWARD');"></button>
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

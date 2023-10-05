@@ -1,0 +1,11 @@
+{
+  "name": "RC Wheel App",
+  "short_name": "RC Wheel",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "description": "RC Wheel Web App",
+  "lang": "en-US",
+  "orientation": "portrait",
+  "theme_color": "#FFFFFF"
+}
