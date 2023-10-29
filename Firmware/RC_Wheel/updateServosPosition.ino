@@ -9,7 +9,7 @@ void updateServosPosition() {
     }
   }
   else {
-    digitalWrite(RIGHT_WHEEL_MOTOR_PIN, HIGH); //This stops a faulty servo
+    rightServo.write(90); //This stops a 360 servo
   }
   //Left servo
   if(_leftServoControls._value != 0) {
@@ -21,7 +21,7 @@ void updateServosPosition() {
     }
   }
   else {
-    digitalWrite(LEFT_WHEEL_MOTOR_PIN, HIGH); //This stops a faulty servo
+    leftServo.write(90); //This stops a 360 servo
   }
 }
 

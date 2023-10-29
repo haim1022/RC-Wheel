@@ -1,6 +1,5 @@
 /*
- * The servos used in this project are faulty MG996r servos - no position detection, runs endlessly
- * The program iv'e written tries to compensate for it.
+ * The servos used in this project are 360 degrees MG996r servos - no position detection, runs endlessly
  */
 
 //Include libraries
